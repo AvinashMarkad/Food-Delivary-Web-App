@@ -5175,72 +5175,14 @@ const Body = ()=>{
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "res-container",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Card, {
-                        resData: resList[0]
-                    }, void 0, false, {
-                        fileName: "app.js",
-                        lineNumber: 2112,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Card, {
-                        resData: resList[1]
-                    }, void 0, false, {
+                children: resList.map((card)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Card, {
+                        resData: card
+                    }, card.data.id, false, {
                         fileName: "app.js",
                         lineNumber: 2113,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Card, {
-                        resData: resList[2]
-                    }, void 0, false, {
-                        fileName: "app.js",
-                        lineNumber: 2114,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Card, {
-                        resData: resList[3]
-                    }, void 0, false, {
-                        fileName: "app.js",
-                        lineNumber: 2115,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Card, {
-                        resData: resList[4]
-                    }, void 0, false, {
-                        fileName: "app.js",
-                        lineNumber: 2116,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Card, {
-                        resData: resList[5]
-                    }, void 0, false, {
-                        fileName: "app.js",
-                        lineNumber: 2117,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Card, {
-                        resData: resList[6]
-                    }, void 0, false, {
-                        fileName: "app.js",
-                        lineNumber: 2118,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Card, {
-                        resData: resList[7]
-                    }, void 0, false, {
-                        fileName: "app.js",
-                        lineNumber: 2119,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Card, {
-                        resData: resList[8]
-                    }, void 0, false, {
-                        fileName: "app.js",
-                        lineNumber: 2120,
-                        columnNumber: 9
-                    }, undefined)
-                ]
-            }, void 0, true, {
+                        columnNumber: 11
+                    }, undefined))
+            }, void 0, false, {
                 fileName: "app.js",
                 lineNumber: 2111,
                 columnNumber: 7
@@ -5259,18 +5201,18 @@ const AppLayout = ()=>{
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Header, {}, void 0, false, {
                 fileName: "app.js",
-                lineNumber: 2128,
+                lineNumber: 2122,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Body, {}, void 0, false, {
                 fileName: "app.js",
-                lineNumber: 2129,
+                lineNumber: 2123,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "app.js",
-        lineNumber: 2127,
+        lineNumber: 2121,
         columnNumber: 5
     }, undefined);
 };
@@ -5278,7 +5220,7 @@ _c3 = AppLayout;
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayout, {}, void 0, false, {
     fileName: "app.js",
-    lineNumber: 2135,
+    lineNumber: 2129,
     columnNumber: 13
 }, undefined));
 var _c, _c1, _c2, _c3;

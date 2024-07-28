@@ -2109,15 +2109,9 @@ const Body = () => {
         ></input>
       </div>
       <div className="res-container">
-        <Card resData={resList[0]} />
-        <Card resData={resList[1]} />
-        <Card resData={resList[2]} />
-        <Card resData={resList[3]} />
-        <Card resData={resList[4]} />
-        <Card resData={resList[5]} />
-        <Card resData={resList[6]} />
-        <Card resData={resList[7]} />
-        <Card resData={resList[8]} />
+        {resList.map((card) => (
+          <Card key={card.data.id} resData={card} />
+        ))}
       </div>
     </div>
   );
