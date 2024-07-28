@@ -25,21 +25,31 @@ const Header = () => {
 
 const Card = (promps) => {
   const { resData } = promps;
+
+  const {
+    cloudinaryImageId,
+    name,
+    cuisines,
+    avgRating,
+    costForTwo,
+    slaString,
+  } = resData?.data;
+
   return (
     <div className="res-card">
       <img
         className="Meghana-img"
         src={
           "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" +
-          resData.data.cloudinaryImageId
+          cloudinaryImageId
         }
         alt="food img"
       />
-      <h3>{resData.data.name}</h3>
-      <h3>{resData.data.cuisines[0]}</h3>
-      <h3>{resData.data.avgRating}</h3>
-      <h3>{resData.data.costForTwo}</h3>
-      <h3>{resData.data.slaString}</h3>
+      <h3>{name}</h3>
+      <h3>{cuisines[0]}</h3>
+      <h3>{avgRating}</h3>
+      <h3>{costForTwo}</h3>
+      <h3>{slaString}</h3>
     </div>
   );
 };
@@ -2108,7 +2118,6 @@ const Body = () => {
         <Card resData={resList[6]} />
         <Card resData={resList[7]} />
         <Card resData={resList[8]} />
-       
       </div>
     </div>
   );
