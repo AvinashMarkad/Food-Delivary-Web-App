@@ -6,7 +6,7 @@ Here's a template for your GitHub README file for a React project that displays 
 
 A responsive web application built with React that allows users to browse and order food items from various restaurants. This app features a user-friendly interface and is designed to provide a seamless user experience across different devices.
 
-![App Screenshot](./path-to-your-screenshot.png)
+
 
 ## Features
 
@@ -59,14 +59,5 @@ A responsive web application built with React that allows users to browse and or
 
 Contributions are welcome! Please feel free to submit a pull request or open an issue if you have any suggestions or improvements.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Contact
-
-For any questions or inquiries, please contact [Your Name](mailto:your-email@example.com).
-
----
 
 Replace placeholders like `your-username`, `your-email@example.com`, and the path to the screenshot with your actual details. This README provides a comprehensive overview of your project, making it easier for others to understand and contribute.
