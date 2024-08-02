@@ -1,0 +1,23 @@
+{
+  "name": "react-js-namaste-dosto-course",
+  "version": "1.0.0",
+  "description": "by Avinash Markad",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Avinash",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.12.0",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "browsers": [
+    "last 2 version"
+  ]
+}
