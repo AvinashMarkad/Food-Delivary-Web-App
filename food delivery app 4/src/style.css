@@ -1,0 +1,145 @@
+body {
+  font-family: Monospace;
+  margin: 0;
+  padding: 0;
+  background-color: #fff; /* White background for the entire page */
+  color: #000; /* Default text color to black */
+}
+
+.app {
+  font-family: Monospace;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  /* margin-left: 13.5%;
+  margin-right: 13.5%; */
+  padding: 10px 0;
+  background-color: #ffffff; /* Black background for the header */
+  color: #000000; /* White text color in the header */
+}
+
+.logo {
+  width: 100px;
+}
+
+.nav-items > ul {
+  display: flex;
+  list-style-type: none;
+  font-size: 24px;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-items > ul > li {
+  padding: 0 20px;
+  margin: 10px 0;
+  color: #000000; /* White text color for nav items */
+}
+
+.nav-items > ul > li:hover {
+  text-decoration: underline; /* Underline on hover for better visibility */
+}
+
+.mainbody {
+  /* margin-left: 13%;
+  margin-right: 13%; */
+  padding: 20px 0;
+  background-color: #f5f5f5; /* Light gray background for the main body */
+}
+
+.res-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.res-card {
+  width: 300px;
+  height: 450px;
+  margin: 15px;
+ 
+  padding: 5px;
+  cursor: pointer;
+  box-sizing: border-box;
+  background-color: #fff; /* White background for cards */
+  transition: border 0.3s ease, transform 0.3s ease;
+}
+
+.res-card:hover {
+  border: 4px solid #ffffff; /* Thicker white border on hover */
+  transform: scale(1.10); /* Slightly increase the size of the card on hover */
+}
+
+.Meghana-img {
+  width: 100%;
+  height: 60%;
+}
+
+
+.filter-btn {
+  background-color: #727272; /* Blue background */
+  color: white; /* White text */
+  border: none; /* Remove default border */
+  padding: 10px 20px; /* Add some padding */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 16px; /* Increase font size */
+  transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+.filter-btn:hover {
+  background-color: #000000; /* Darker blue on hover */
+}
+
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .header {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .nav-items > ul > li {
+    padding: 0 15px;
+  }
+
+  .mainbody {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .nav-items > ul {
+    flex-direction: column;
+  }
+
+  .nav-items > ul > li {
+    padding: 10px 0;
+  }
+
+  .mainbody {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+
+@media (max-width: 480px) {
+  .res-card {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+  }
+
+  .search {
+    width: 100%;
+  }
+}
