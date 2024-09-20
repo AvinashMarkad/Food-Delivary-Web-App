@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Consolas, Monaco, Courier New, monospace;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #000;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  .logo {
+    width: 100px;
+  }
+  
+  .nav-items > ul {
+    display: flex;
+    list-style-type: none;
+    font-size: 24px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-items > ul > li {
+    padding: 0 20px;
+    margin: 10px 0;
+    color: #000000;
+  }
+  
+  .nav-items > ul > li:hover {
+    text-decoration: underline;
+  }
+  
+  .mainbody {
+    padding: 20px 0;
+    background-color: #f5f5f5;
+  }
+  
+  .res-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .res-card {
+    width: 300px;
+    height: 450px;
+    margin: 15px;
+    padding: 5px;
+    cursor: pointer;
+    background-color: #fff;
+    transition: border 0.3s ease, transform 0.3s ease;
+  }
+  
+  .res-card:hover {
+    border: 4px solid #ffffff;
+    transform: scale(1.10);
+  }
+  
+  .Meghana-img {
+    width: 100%;
+    height: 60%;
+  }
+  
+  .filter-btn {
+    background-color: #727272;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .filter-btn:hover {
+    background-color: #000000;
+  }
+
+  .shimmer-card{
+    width: 200px;
+    height: 400px;
+    margin: 10px 10px;
+    padding: 5px  5px;
+    background-color: #f0f0f0;
+  }
+
+  .shimmer-container{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 1200px) {
+    .header {
+      margin: 0 10%;
+    }
+  
+    .nav-items > ul > li {
+      padding: 0 15px;
+    }
+  
+    .mainbody {
+      margin: 0 10%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .nav-items > ul {
+      flex-direction: column;
+    }
+  
+    .nav-items > ul > li {
+      padding: 10px 0;
+    }
+  
+    .mainbody {
+      margin: 0 5%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .res-card {
+      width: 100%;
+      height: auto;
+      margin: 10px 0;
+    }
+  
+    .search {
+      width: 100%;
+    }
+  }
