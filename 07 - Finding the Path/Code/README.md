@@ -12,4 +12,4 @@
 - Create a `Restaurant Page` with dynamic restaurant ID.
 - (Extra) - Create a `login Page` using `Formik Library`.
 
-## [Food App Shimmer UI](https://food-app-shimmer-ui.netlify.app/)
+
