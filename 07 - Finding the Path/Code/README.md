@@ -11,5 +11,3 @@
 - Make an `Error page` for routing errors.
 - Create a `Restaurant Page` with dynamic restaurant ID.
 - (Extra) - Create a `login Page` using `Formik Library`.
-
-

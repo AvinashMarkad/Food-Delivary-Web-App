@@ -34850,7 +34850,7 @@ const Body = ()=>{
     }, []);
     const fetchData = async ()=>{
         try {
-            const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=18.61610&lng=73.72860&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING ");
+            const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9351929&lng=77.624480699999999&page_type=DESKTOP_WEB_LISTING");
             const json = await data.json();
             const restaurants = json?.data?.cards?.[2]?.data?.data?.cards || []; // Safe fallback to empty array
             setListOfRestaurants(restaurants);
@@ -34862,12 +34862,12 @@ const Body = ()=>{
     // Safeguard for conditional rendering
     if (!Array.isArray(listOfRestaurants)) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
         fileName: "src/components/Body.js",
-        lineNumber: 32,
+        lineNumber: 33,
         columnNumber: 12
     }, undefined);
     return listOfRestaurants.length === 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
         fileName: "src/components/Body.js",
-        lineNumber: 36,
+        lineNumber: 37,
         columnNumber: 5
     }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "body",
@@ -34888,7 +34888,7 @@ const Body = ()=>{
                                 }
                             }, void 0, false, {
                                 fileName: "src/components/Body.js",
-                                lineNumber: 41,
+                                lineNumber: 42,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -34899,13 +34899,13 @@ const Body = ()=>{
                                 children: "Search"
                             }, void 0, false, {
                                 fileName: "src/components/Body.js",
-                                lineNumber: 50,
+                                lineNumber: 51,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/Body.js",
-                        lineNumber: 40,
+                        lineNumber: 41,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -34917,13 +34917,13 @@ const Body = ()=>{
                         children: "Top Rated Restaurants"
                     }, void 0, false, {
                         fileName: "src/components/Body.js",
-                        lineNumber: 61,
+                        lineNumber: 62,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/Body.js",
-                lineNumber: 39,
+                lineNumber: 40,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -34938,23 +34938,23 @@ const Body = ()=>{
                             resData: restaurant
                         }, void 0, false, {
                             fileName: "src/components/Body.js",
-                            lineNumber: 83,
+                            lineNumber: 84,
                             columnNumber: 13
                         }, undefined)
                     }, restaurant.data.id, false, {
                         fileName: "src/components/Body.js",
-                        lineNumber: 75,
+                        lineNumber: 76,
                         columnNumber: 11
                     }, undefined))
             }, void 0, false, {
                 fileName: "src/components/Body.js",
-                lineNumber: 73,
+                lineNumber: 74,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/Body.js",
-        lineNumber: 38,
+        lineNumber: 39,
         columnNumber: 5
     }, undefined);
 };
@@ -65523,13 +65523,13 @@ const Footer = ()=>{
             children: [
                 "Copyright \xa9 ",
                 currYear,
-                ", Made with \uD83D\uDC97 by ",
+                ", Made by ",
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
-                    children: "Vasu"
+                    children: "avinashMarkad"
                 }, void 0, false, {
                     fileName: "src/components/Footer.js",
                     lineNumber: 6,
-                    columnNumber: 54
+                    columnNumber: 46
                 }, undefined)
             ]
         }, void 0, true, {
