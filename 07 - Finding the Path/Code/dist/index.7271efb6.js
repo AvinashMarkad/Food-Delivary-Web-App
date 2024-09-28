@@ -27471,7 +27471,8 @@ parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "CDN_URL", ()=>CDN_URL);
 parcelHelpers.export(exports, "LOGO_URL", ()=>LOGO_URL);
 parcelHelpers.export(exports, "MENU_API", ()=>MENU_API);
-const CDN_URL = "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_264,h_288,c_fill/";
+const CDN_URL = // 'https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_264,h_288,c_fill/';
+"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/";
 const LOGO_URL = "https://png.pngtree.com/png-vector/20230217/ourmid/pngtree-food-logo-design-for-restaurant-and-business-png-image_6604922.png";
 const MENU_API = "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=12.9715987&lng=77.5945627&restaurantId=";
 
@@ -34850,9 +34851,10 @@ const Body = ()=>{
     }, []);
     const fetchData = async ()=>{
         try {
-            const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9351929&lng=77.624480699999999&page_type=DESKTOP_WEB_LISTING");
+            const data = await fetch("/https://www.swiggy.com/dapi/restaurants/list/v5?lat=18.5204303&lng=73.8567437&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING");
             const json = await data.json();
-            const restaurants = json?.data?.cards?.[2]?.data?.data?.cards || []; // Safe fallback to empty array
+            console.log(json.data.cards[4].card.card.gridElements.infoWithStyle.restaurants);
+            const restaurants = json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants || []; // Safe fallback to empty array
             setListOfRestaurants(restaurants);
             setFilteredRestaurant(restaurants);
         } catch (error) {
@@ -34862,12 +34864,12 @@ const Body = ()=>{
     // Safeguard for conditional rendering
     if (!Array.isArray(listOfRestaurants)) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
         fileName: "src/components/Body.js",
-        lineNumber: 33,
+        lineNumber: 35,
         columnNumber: 12
     }, undefined);
     return listOfRestaurants.length === 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
         fileName: "src/components/Body.js",
-        lineNumber: 37,
+        lineNumber: 39,
         columnNumber: 5
     }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "body",
@@ -34888,42 +34890,42 @@ const Body = ()=>{
                                 }
                             }, void 0, false, {
                                 fileName: "src/components/Body.js",
-                                lineNumber: 42,
+                                lineNumber: 44,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                                 onClick: ()=>{
-                                    const filteredRestaurant = listOfRestaurants.filter((res)=>res?.data?.name?.toLowerCase().includes(searchText.toLowerCase()));
+                                    const filteredRestaurant = listOfRestaurants.filter((res)=>res?.info?.name?.includes(searchText.toLowerCase()));
                                     setFilteredRestaurant(filteredRestaurant);
                                 },
                                 children: "Search"
                             }, void 0, false, {
                                 fileName: "src/components/Body.js",
-                                lineNumber: 51,
+                                lineNumber: 53,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/Body.js",
-                        lineNumber: 41,
+                        lineNumber: 43,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                         className: "filter-btn",
                         onClick: ()=>{
-                            const filteredList = listOfRestaurants.filter((res)=>parseFloat(res?.data?.avgRating) > 4);
+                            const filteredList = listOfRestaurants.filter((res)=>parseFloat(res.info.avgRating) > 4);
                             setFilteredRestaurant(filteredList);
                         },
                         children: "Top Rated Restaurants"
                     }, void 0, false, {
                         fileName: "src/components/Body.js",
-                        lineNumber: 62,
+                        lineNumber: 64,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/Body.js",
-                lineNumber: 40,
+                lineNumber: 42,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -34933,28 +34935,28 @@ const Body = ()=>{
                             textDecoration: "none",
                             color: "#000"
                         },
-                        to: "/restaurants/" + restaurant.data.id,
+                        to: "/restaurants/" + restaurant.info.id,
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantCardDefault.default), {
                             resData: restaurant
                         }, void 0, false, {
                             fileName: "src/components/Body.js",
-                            lineNumber: 84,
+                            lineNumber: 86,
                             columnNumber: 13
                         }, undefined)
-                    }, restaurant.data.id, false, {
+                    }, restaurant.info.id, false, {
                         fileName: "src/components/Body.js",
-                        lineNumber: 76,
+                        lineNumber: 78,
                         columnNumber: 11
                     }, undefined))
             }, void 0, false, {
                 fileName: "src/components/Body.js",
-                lineNumber: 74,
+                lineNumber: 76,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/Body.js",
-        lineNumber: 39,
+        lineNumber: 41,
         columnNumber: 5
     }, undefined);
 };
@@ -34984,7 +34986,7 @@ var _fi = require("react-icons/fi");
 var _ai = require("react-icons/ai");
 const RestaurantCard = (props)=>{
     const { resData } = props;
-    const { cloudinaryImageId, name, cuisines, avgRating, costForTwo, deliveryTime } = resData?.data;
+    const { cloudinaryImageId, name, cuisines, avgRating, costForTwo, deliveryTime } = resData?.info;
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "res-card",
         children: [

@@ -16,11 +16,13 @@ const Body = () => {
   const fetchData = async () => {
     try {
       const data = await fetch(
-        'https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9351929&lng=77.624480699999999&page_type=DESKTOP_WEB_LISTING');
-
+        "/https://www.swiggy.com/dapi/restaurants/list/v5?lat=18.5204303&lng=73.8567437&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
+      );
       const json = await data.json();
 
-      const restaurants = json?.data?.cards?.[2]?.data?.data?.cards || []; // Safe fallback to empty array
+      console.log(json.data.cards[4].card.card.gridElements.infoWithStyle.restaurants);
+
+      const restaurants = json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants || []; // Safe fallback to empty array
       setListOfRestaurants(restaurants);
       setFilteredRestaurant(restaurants);
     } catch (error) {
@@ -51,7 +53,7 @@ const Body = () => {
           <button
             onClick={() => {
               const filteredRestaurant = listOfRestaurants.filter((res) =>
-                res?.data?.name?.toLowerCase().includes(searchText.toLowerCase())
+                res?.info?.name?.includes(searchText.toLowerCase())
               );
               setFilteredRestaurant(filteredRestaurant);
             }}
@@ -63,7 +65,7 @@ const Body = () => {
           className="filter-btn"
           onClick={() => {
             const filteredList = listOfRestaurants.filter(
-              (res) => parseFloat(res?.data?.avgRating) > 4
+              (res) => parseFloat(res.info.avgRating) > 4
             );
             setFilteredRestaurant(filteredList);
           }}
@@ -78,8 +80,8 @@ const Body = () => {
               textDecoration: 'none',
               color: '#000',
             }}
-            key={restaurant.data.id}
-            to={'/restaurants/' + restaurant.data.id}
+            key={restaurant.info.id}
+            to={'/restaurants/' + restaurant.info.id}
           >
             <RestaurantCard resData={restaurant} />
           </Link>
