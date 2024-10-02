@@ -23,7 +23,7 @@ const Header = () => {
         {/* <img src={LOGO_URL} alt="App Logo" className="logo" /> */}
         <Link to="/">
           <img
-            src="https://cdn-icons-png.flaticon.com/128/3655/3655682.png"
+            src="https://t3.ftcdn.net/jpg/00/70/15/96/240_F_70159600_lyb7DSbP2GKowZ0l2YbnHU1wCcxYkYxL.jpg"
             alt="Logo"
             className="logo"
           />

@@ -16,7 +16,7 @@ const Body = () => {
   const fetchData = async () => {
     try {
       const data = await fetch(
-        "/https://www.swiggy.com/dapi/restaurants/list/v5?lat=18.5204303&lng=73.8567437&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
+        "https://www.swiggy.com/dapi/restaurants/list/v5?lat=18.5204303&lng=73.8567437&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
       );
       const json = await data.json();
 
@@ -25,8 +25,9 @@ const Body = () => {
       const restaurants = json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants || []; // Safe fallback to empty array
       setListOfRestaurants(restaurants);
       setFilteredRestaurant(restaurants);
+      console.log(restaurants);
     } catch (error) {
-      console.error('Error fetching data:', error);
+      // console.error('Error fetching data:', error);
     }
   };
 
