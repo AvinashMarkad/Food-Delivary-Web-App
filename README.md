@@ -8,6 +8,7 @@ A responsive web application built with React that allows users to browse and or
 
 ![image](https://github.com/user-attachments/assets/5545640f-ed75-4a59-bc24-83563b116edf)
 ![image](https://github.com/user-attachments/assets/bf294609-7742-402d-a530-fcca3ed54927)
+![image](https://github.com/user-attachments/assets/4028bad5-9746-4e53-99d5-279e9c8f9be4)
 
 ## Features
 
