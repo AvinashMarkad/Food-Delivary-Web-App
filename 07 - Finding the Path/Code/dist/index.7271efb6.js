@@ -27546,12 +27546,8 @@ const RestaurantCard = (props)=>{
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
                         className: "item-price",
-                        children: [
-                            "\u20B9 ",
-                            costForTwo / 100,
-                            " FOR TWO"
-                        ]
-                    }, void 0, true, {
+                        children: costForTwo
+                    }, void 0, false, {
                         fileName: "src/components/RestaurantCard.js",
                         lineNumber: 37,
                         columnNumber: 9
@@ -27574,7 +27570,7 @@ const RestaurantCard = (props)=>{
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                 children: [
                                     " ",
-                                    deliveryTime,
+                                    avgRating.toString().replace(".", ""),
                                     " minutes"
                                 ]
                             }, void 0, true, {
