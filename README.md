@@ -6,7 +6,8 @@ Here's a template for your GitHub README file for a React project that displays 
 
 A responsive web application built with React that allows users to browse and order food items from various restaurants. This app features a user-friendly interface and is designed to provide a seamless user experience across different devices.
 
-
+![image](https://github.com/user-attachments/assets/5545640f-ed75-4a59-bc24-83563b116edf)
+![image](https://github.com/user-attachments/assets/bf294609-7742-402d-a530-fcca3ed54927)
 
 ## Features
 
