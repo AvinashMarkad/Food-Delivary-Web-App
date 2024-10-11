@@ -65568,12 +65568,16 @@ const About = ()=>{
                 lineNumber: 8,
                 columnNumber: 5
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _userDefault.default), {}, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _userDefault.default), {
+                name: "Avinash Markad"
+            }, void 0, false, {
                 fileName: "src/components/About.js",
                 lineNumber: 9,
                 columnNumber: 5
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _userClassDefault.default), {}, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _userClassDefault.default), {
+                name: "Avinash Markad"
+            }, void 0, false, {
                 fileName: "src/components/About.js",
                 lineNumber: 10,
                 columnNumber: 5
@@ -65626,7 +65630,15 @@ try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-const User = ()=>{
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _s = $RefreshSig$();
+const User = (props)=>{
+    _s();
+    const [count, setcount] = (0, _react.useState)(0);
+    const handleClick = ()=>{
+        setcount(1); // Set count to 1 when clicked
+    };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "user",
         children: [
@@ -65634,14 +65646,51 @@ const User = ()=>{
                 children: "Frontend Developer"
             }, void 0, false, {
                 fileName: "src/components/User.js",
-                lineNumber: 4,
+                lineNumber: 10,
                 columnNumber: 12
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                 children: "Contact Information"
             }, void 0, false, {
                 fileName: "src/components/User.js",
-                lineNumber: 5,
+                lineNumber: 11,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                children: [
+                    "count=",
+                    count
+                ]
+            }, void 0, true, {
+                fileName: "src/components/User.js",
+                lineNumber: 12,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                onlclick: handleClick,
+                children: [
+                    "count=",
+                    count
+                ]
+            }, void 0, true, {
+                fileName: "src/components/User.js",
+                lineNumber: 13,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h5", {
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
+                        children: "Name:"
+                    }, void 0, false, {
+                        fileName: "src/components/User.js",
+                        lineNumber: 14,
+                        columnNumber: 17
+                    }, undefined),
+                    props.name
+                ]
+            }, void 0, true, {
+                fileName: "src/components/User.js",
+                lineNumber: 14,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h5", {
@@ -65650,14 +65699,14 @@ const User = ()=>{
                         children: "Email:"
                     }, void 0, false, {
                         fileName: "src/components/User.js",
-                        lineNumber: 6,
+                        lineNumber: 15,
                         columnNumber: 17
                     }, undefined),
                     " avinash@examh5le.com"
                 ]
             }, void 0, true, {
                 fileName: "src/components/User.js",
-                lineNumber: 6,
+                lineNumber: 15,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h5", {
@@ -65666,14 +65715,14 @@ const User = ()=>{
                         children: "phone:"
                     }, void 0, false, {
                         fileName: "src/components/User.js",
-                        lineNumber: 7,
+                        lineNumber: 16,
                         columnNumber: 17
                     }, undefined),
                     " (123) 456-7890"
                 ]
             }, void 0, true, {
                 fileName: "src/components/User.js",
-                lineNumber: 7,
+                lineNumber: 16,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h5", {
@@ -65682,14 +65731,14 @@ const User = ()=>{
                         children: "Location:"
                     }, void 0, false, {
                         fileName: "src/components/User.js",
-                        lineNumber: 8,
+                        lineNumber: 17,
                         columnNumber: 17
                     }, undefined),
                     " City, Country"
                 ]
             }, void 0, true, {
                 fileName: "src/components/User.js",
-                lineNumber: 8,
+                lineNumber: 17,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h5", {
@@ -65698,23 +65747,24 @@ const User = ()=>{
                         children: "Role:"
                     }, void 0, false, {
                         fileName: "src/components/User.js",
-                        lineNumber: 9,
+                        lineNumber: 18,
                         columnNumber: 17
                     }, undefined),
                     " Frontend Develoh5er"
                 ]
             }, void 0, true, {
                 fileName: "src/components/User.js",
-                lineNumber: 9,
+                lineNumber: 18,
                 columnNumber: 13
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/User.js",
-        lineNumber: 3,
+        lineNumber: 9,
         columnNumber: 9
     }, undefined);
 };
+_s(User, "cGow9oyKgQNRJXskZLzGBFT460E=");
 _c = User;
 exports.default = User;
 var _c;
@@ -65725,7 +65775,7 @@ $RefreshReg$(_c, "User");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"Vp2Fx":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq"}],"Vp2Fx":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$46df = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -65738,7 +65788,16 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 class UserClass extends (0, _reactDefault.default).Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            count: 0
+        };
+        console.log(props);
+    }
     render() {
+        const { name } = this.props;
+        const { count } = this.state;
         return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
             className: "user",
             children: [
@@ -65746,14 +65805,53 @@ class UserClass extends (0, _reactDefault.default).Component {
                     children: "Frontend Developer"
                 }, void 0, false, {
                     fileName: "src/components/UserClass.js",
-                    lineNumber: 7,
+                    lineNumber: 19,
                     columnNumber: 16
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                     children: "Contact Information"
                 }, void 0, false, {
                     fileName: "src/components/UserClass.js",
-                    lineNumber: 8,
+                    lineNumber: 20,
+                    columnNumber: 17
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                    onClick: ()=>{
+                        this.setState({
+                            count: count + 1
+                        });
+                    },
+                    children: "INC COUNT"
+                }, void 0, false, {
+                    fileName: "src/components/UserClass.js",
+                    lineNumber: 21,
+                    columnNumber: 17
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                    children: [
+                        "count=",
+                        this.state.count
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/UserClass.js",
+                    lineNumber: 28,
+                    columnNumber: 17
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h5", {
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
+                            children: "Name:"
+                        }, void 0, false, {
+                            fileName: "src/components/UserClass.js",
+                            lineNumber: 29,
+                            columnNumber: 21
+                        }, this),
+                        " ",
+                        name
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/UserClass.js",
+                    lineNumber: 29,
                     columnNumber: 17
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h5", {
@@ -65762,14 +65860,14 @@ class UserClass extends (0, _reactDefault.default).Component {
                             children: "Email:"
                         }, void 0, false, {
                             fileName: "src/components/UserClass.js",
-                            lineNumber: 9,
+                            lineNumber: 30,
                             columnNumber: 21
                         }, this),
                         " avinash@examh5le.com"
                     ]
                 }, void 0, true, {
                     fileName: "src/components/UserClass.js",
-                    lineNumber: 9,
+                    lineNumber: 30,
                     columnNumber: 17
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h5", {
@@ -65778,14 +65876,14 @@ class UserClass extends (0, _reactDefault.default).Component {
                             children: "phone:"
                         }, void 0, false, {
                             fileName: "src/components/UserClass.js",
-                            lineNumber: 10,
+                            lineNumber: 31,
                             columnNumber: 21
                         }, this),
                         " (123) 456-7890"
                     ]
                 }, void 0, true, {
                     fileName: "src/components/UserClass.js",
-                    lineNumber: 10,
+                    lineNumber: 31,
                     columnNumber: 17
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h5", {
@@ -65794,14 +65892,14 @@ class UserClass extends (0, _reactDefault.default).Component {
                             children: "Location:"
                         }, void 0, false, {
                             fileName: "src/components/UserClass.js",
-                            lineNumber: 11,
+                            lineNumber: 32,
                             columnNumber: 21
                         }, this),
                         " City, Country"
                     ]
                 }, void 0, true, {
                     fileName: "src/components/UserClass.js",
-                    lineNumber: 11,
+                    lineNumber: 32,
                     columnNumber: 17
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h5", {
@@ -65810,20 +65908,20 @@ class UserClass extends (0, _reactDefault.default).Component {
                             children: "Role:"
                         }, void 0, false, {
                             fileName: "src/components/UserClass.js",
-                            lineNumber: 12,
+                            lineNumber: 33,
                             columnNumber: 21
                         }, this),
                         " Frontend Develoh5er"
                     ]
                 }, void 0, true, {
                     fileName: "src/components/UserClass.js",
-                    lineNumber: 12,
+                    lineNumber: 33,
                     columnNumber: 17
                 }, this)
             ]
         }, void 0, true, {
             fileName: "src/components/UserClass.js",
-            lineNumber: 6,
+            lineNumber: 18,
             columnNumber: 13
         }, this);
     }
